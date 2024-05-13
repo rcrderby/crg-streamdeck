@@ -10,6 +10,7 @@
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1Lead)" : "q",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1Lost)" : "g",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1NI)" : "w",
+    "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1NoPivot)" : "Z",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1OfficialReview)" : "c",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1RemoveTrip)" : "[",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team1RetainedOfficialReview)" : "/",
@@ -27,6 +28,7 @@
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2Lead)" : "y",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2Lost)" : "h",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2NI)" : "u",
+    "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2NoPivot)" : "M",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2OfficialReview)" : "b",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2RemoveTrip)" : "]",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.KeyControl.Team2RetainedOfficialReview)" : "?",
@@ -44,10 +46,10 @@
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.ScoreAdjustments)" : "false",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.StartStopButtons)" : "false",
     "ScoreBoard.Settings.Setting(ScoreBoard.Operator__streamdeck.TabBar)" : "true",
-    "ScoreBoard.Version(release)" : "v2023.4",
-    "ScoreBoard.Version(release.commit)" : "162cdc46de9d5cde95336d9fdf5e419f7cbd323d",
+    "ScoreBoard.Version(release)" : "v2023.5",
+    "ScoreBoard.Version(release.commit)" : "8c763837c36fc4dcd32946c337d23f02066ff0fe",
     "ScoreBoard.Version(release.host)" : "localhost",
-    "ScoreBoard.Version(release.time)" : "20231002175611",
+    "ScoreBoard.Version(release.time)" : "20231126214043",
     "ScoreBoard.Version(release.user)" : "frank"
   }
 }
