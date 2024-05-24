@@ -1,0 +1,6 @@
+# .flake8 configuration file documentation:
+# https://flake8.pycqa.org/en/latest/user/configuration.html 
+
+[flake8]
+# Ignore E402: module level import not at top of file
+# ignore = E402

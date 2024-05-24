@@ -1,0 +1,17 @@
+# .env file support
+python_dotenv
+
+# Python formatting
+autopep8
+flake8
+pylint
+
+# Python interpreter
+ipython
+
+# Static code analysis
+bandit
+
+# Python testing
+pytest
+pytest-cov
