@@ -1,0 +1,51 @@
+---
+# Perform linting with GitHub Super Linter
+## https://github.com/super-linter/super-linter
+
+# Name of the action
+name: Super Linter
+
+# Events that trigger the action
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint_repository:
+    name: Lint repository files
+    runs-on: ubuntu-latest
+
+    # Job permissions
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+
+    steps:
+      # checkout action documentation
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
+
+      # Super Linter action documentation
+      # https://github.com/marketplace/actions/super-linter
+      - name: Super Linter
+        uses: super-linter/super-linter@v6.4.1
+        # Configuration settings
+        env:
+          # Report status checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Specify languages to lint
+          VALIDATE_DOCKERFILE_HADOLINT: true
+          VALIDATE_GITHUB_ACTIONS: true
+          VALIDATE_GITLEAKS: true
+          VALIDATE_MARKDOWN: true
+          VALIDATE_PYTHON_FLAKE8: true
+          VALIDATE_PYTHON_PYLINT: true
+          VALIDATE_YAML: true
+          # Language-specific configuration
+          YAML_ERROR_ON_WARNING: true

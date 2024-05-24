@@ -1,0 +1,54 @@
+// Visual Studio Code Development Container configuration file
+// https://code.visualstudio.com/docs/remote/devcontainerjson-reference
+{
+    // Docker build instructions
+    "build": {
+        "dockerfile": "../Dockerfile.dev",
+        "context": ".."
+    },
+    "name": "crg-stream-deck",
+    "customizations": {
+        "vscode": {
+            // Visual Studio Code extensions
+            "extensions": [
+                "davidanson.vscode-markdownlint",
+                "github.vscode-github-actions",
+                "github.vscode-pull-request-github",
+                "ms-python.flake8",
+                "ms-python.pylint",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "redhat.vscode-yaml",
+                "streetsidesoftware.code-spell-checker"
+            ],
+            // Visual Studio Code environment configuration
+            "settings": {
+                "markdownlint.config": {
+                    "extends": "/workspaces/crg-stream-deck/.github/linters/.markdown-lint.yml"
+                },
+                // Set Python configuration for runtime, syntax analysis, and linting
+                "python.analysis.useImportHeuristic": true,
+                "python.formatting.provider": "autopep8",
+                "python.pythonPath": "/usr/local/bin/python3",
+                // Set the default terminal application to bash
+                "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
+                // Customize YAML formatting
+                "[yaml]": {
+                    "editor.autoIndent": "keep",
+                    "editor.insertSpaces": true,
+                    "editor.quickSuggestions": {
+                        "other": true,
+                        "comments": false,
+                        "strings": true
+                    },
+                    "editor.tabSize": 2
+                }
+            }
+        }
+    },
+    // Ports to forward to the devcontainer
+    "forwardPorts": [
+    //     8080
+    ]
+}

@@ -1,0 +1,27 @@
+# VS Code Development Dockerfile for CRG Stream Deck
+# Base image
+FROM python:3.11-slim-buster
+
+# Set the working directory
+WORKDIR /workspaces/crg-stream-deck
+
+# Update OS package list, install packages, and clear apt cache
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install --no-install-recommends -y git ssh && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy the Python pip requirements file
+COPY requirements/requirements_dev.txt requirements/requirements_dev.txt
+
+# Upgrade pip and install requirements from the requirements file
+RUN python -m pip install --no-cache-dir --upgrade pip && \
+    python -m pip install --no-cache-dir -r requirements/requirements_dev.txt && \
+    rm -rf requirements
+
+# Set the PYTHONPATH environment variable
+ENV PYTHONPATH=/workspaces/crg-stream-deck
+
+# Start the bash prompt
+CMD ["/bin/bash"]
