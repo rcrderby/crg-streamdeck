@@ -25,7 +25,7 @@
             // Visual Studio Code environment configuration
             "settings": {
                 "markdownlint.config": {
-                    "extends": "/workspaces/crg-container/.github/linters/.markdown-lint.yml"
+                    "extends": "/workspaces/crg-stream-deck/.github/linters/.markdown-lint.yml"
                 },
                 // Set Python configuration for runtime, syntax analysis, and linting
                 "python.analysis.useImportHeuristic": true,

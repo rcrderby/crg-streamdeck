@@ -3,7 +3,7 @@
 FROM python:3.11-slim-buster
 
 # Set the working directory
-WORKDIR /workspaces/crg-container
+WORKDIR /workspaces/crg-stream-deck
 
 # Update OS package list, install packages, and clear apt cache
 RUN apt-get update && \
@@ -21,7 +21,7 @@ RUN python -m pip install --no-cache-dir --upgrade pip && \
     rm -rf requirements
 
 # Set the PYTHONPATH environment variable
-ENV PYTHONPATH=/workspaces/crg-container
+ENV PYTHONPATH=/workspaces/crg-stream-deck
 
 # Start the bash prompt
 CMD ["/bin/bash"]
