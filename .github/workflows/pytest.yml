@@ -1,0 +1,43 @@
+---
+# This action performs pytest testing with coverage reporting
+
+# Name of the action
+name: pytest Testing
+
+# Events that trigger the action
+on:
+  # push:
+  # pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    name: pytest
+    runs-on: ubuntu-latest
+
+    # Set environment variables
+    env:
+      PYTHONPATH: ./
+
+    steps:
+      # checkout@v3 action documentation
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set PYTHONPATH environment variable
+      - name: Set PYTHONPATH environment variable
+        run: |
+          export PYTHONPATH=$PYTHONPATH:${{ env.PYTHONPATH }}
+
+      # Install pytest packages
+      - name: Install pytest packages
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade -r \
+            requirements/requirements_pytest.txt
+
+      # Perform pytest testing and coverage analysis
+      - name: pytest
+        run: |
+          pytest --verbose --cov-report='term-missing' --cov='.'

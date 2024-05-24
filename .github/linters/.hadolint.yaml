@@ -1,0 +1,11 @@
+---
+##########################
+## Hadolint config file ##
+##########################
+## https://github.com/hadolint/hadolint
+
+failure-threshold: info
+ignored:
+  - DL3007  # Pin images to a release tag (not '<image-name>:latest')
+  - DL3008  # Pin versions in apt get install
+  - DL3013  # Pin versions in pip
