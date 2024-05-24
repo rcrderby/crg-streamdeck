@@ -2,7 +2,7 @@
 
 ## Status
 
-[![Super-Linter](https://github.com/timothyhull/crg-streamdeck/actions/workflows/lint-files.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Super-Linter](https://github.com/rcrderby/crg-streamdeck/actions/workflows/lint-files.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Overview
 
