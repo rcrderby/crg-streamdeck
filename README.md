@@ -25,6 +25,18 @@ Any Stream Deck platform should be able to control CRG, and this repository cont
 
 <sub>Generated with [Tables Generator](https://www.tablesgenerator.com/markdown_tables "Tables Generator")</sub>
 
+## Instructions
+
+1. Import CRG Operator Profile
+
+2. Import Stream Deck Profile
+
+3. Control CRG With Stream Deck
+
+## Resources
+
+- Stream Deck Key Icons
+
 [^1]: [Stream Deck XL](https://www.elgato.com/us/en/p/stream-deck-xl "Stream Deck XL")
 [^2]: [Stream Deck MK.2](https://www.elgato.com/us/en/p/stream-deck-mk2-black "Stream Deck MK.2")
 [^3]: [Stream Deck +](https://www.elgato.com/us/en/p/stream-deck-plus-black "Stream Deck +")
