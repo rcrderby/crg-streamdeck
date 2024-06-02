@@ -10,7 +10,7 @@ This repository includes resources that allow you to control the [CRG ScoreBoard
 
 ## Stream Deck Controller Support
 
-Any Stream Deck platform should be able to control CRG, and this repository contains resources that support the following Stream Deck controllers:
+Any Stream Deck platform should be able to control CRG, and this repository contains content for the following Stream Deck controllers:
 
 |            **Platform**           | **Supported** | **Number of Keys** | **Number of Dials** |
 |---------------------------------- |:-------------:|:------------------:|:-------------------:|
