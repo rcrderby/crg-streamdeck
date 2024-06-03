@@ -12,6 +12,8 @@ Every roller derby SBO [^1] has a preferred way to interact with the CRG Scorebo
 
 Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/32-button/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")).
 
+## Stream Deck Software
+
 One thing to note about Stream Deck is it requires a [software installation](https://www.elgato.com/us/en/s/downloads "Stream Deck Software Downloads") in order to function, unlike most keyboards.  So, be sure you can install Stream Deck software on whichever SBO computer you intend to use.
 
 ## Stream Deck Support
