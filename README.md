@@ -41,9 +41,17 @@ The content in this repository should help you get a Stream Deck connected to an
 
 1. Download and install the [Stream Deck software](https://www.elgato.com/us/en/s/downloads "Stream Deck Software Downloads") on your SBO computer.
 
-2. Import CRG Operator Profile
+2. Import the Stream Deck Profile.
 
-3. Import Stream Deck Profile
+    <details>
+    1. Test
+
+    2. Test
+
+    3. Test
+    </details>
+
+3. Import CRG Operator Profile
 
 4. Control CRG With Stream Deck
 
