@@ -37,43 +37,52 @@ Any Stream Deck platform should be able to control CRG, and this repository cont
 
 ## Getting Started
 
-The content in this repository should help you get a Stream Deck connected to and controlling CRG within a few minutes, assuming you already have a computer that effectively runs the CRG Scoreboard software.  Follow these steps to control CRG:
+The content in this repository will help you get a Stream Deck connected to and controlling CRG within a few minutes, assuming you have a computer that effectively runs the CRG Scoreboard software already.  Follow these steps to complete the setup process:
 
-1. Download and install the [Stream Deck software](https://www.elgato.com/us/en/s/downloads "Stream Deck Software Downloads") on your SBO computer.
+<details>
+  <summary>
+    Download and install the Stream Deck software on your SBO computer:
+  </summary>
 
-2. Import the Stream Deck Profile.
+  The Stream Deck software allows your computer to recognize and interact with a [Stream Deck controller](#stream-deck-support "Stream Deck Controller Platforms").  You must install the Stream Deck software before for your Stream Deck controller to function.
 
-    <details>
-      <summary>
-        Download the Stream Deck Profile(s)
-      </summary>
+  1. Open a web browser on your SBO computer and navigate to [Elgato Software Downloads](https://www.elgato.com/us/en/s/downloads "Elgato Software Downloads").
+  2. Locate and download the `Stream Deck` software for macOS or Windows.
+  3. Install the Stream Deck software on your SBO computer.
 
-      - Stream Deck Profiles contain all of the key icons and keyboard mappings to work with CRG, and you will find all available Stream Deck Profiles [here](/streamdeck-profiles "Stream Deck Profiles Folder").
-      - Download the appropriate Stream Deck Profiles to your SBO computer.
-      - Note there are different Profiles for macOS and Windows because the Stream Deck key mappings do not work across platforms.
+</details>
 
-    </details>
+<details>
+  <summary>
+    Import Stream Deck Profiles:
+  </summary>
 
-    <details>
-      <summary>
-        Import the Stream Deck Profile(s)
-      </summary>
+  Once you have the Stream Deck software installed on your SBO computer, you can download and install the Stream Deck Profiles for CRG in this repository.  These Stream Deck Profiles contain the key icons and key mapping configurations necessary to work with the CRG Operator Profile, and its keyboard mappings, that you will import in the next step.
+  
+  1. Navigate to the [streamdeck-profiles directory](/streamdeck-profiles "Stream Deck Profiles directory") where you will find the available Stream Deck Profiles for CRG.
+  2. Download the appropriate Stream Deck Profiles to your SBO computer, and note there are different Profiles for macOS and Windows because the Stream Deck Software key mappings do not work across platforms.
 
-      1. Open the Stream Deck Software configuration window and click the gear icon in the top menu to access the Stream Deck `Preferences` window \[[example](/docs/images/stream-deck/preferences/streamdeck-preferences.png "Stream Deck Preferences Window")\].
+  </details>
 
-      2. Click on the `Profiles` tab, click to expand the action menu, and click `Import...` \[[example](/docs/images/stream-deck/preferences/streamdeck-import-profile.png "Stream Deck Import Profile")\].
+<details>
+  <summary>
+    Import the Stream Deck Profile(s):
+  </summary>
 
-      3. Select and import the applicable Stream Deck Profiles that you downloaded to your SBO computer.
+  1. Open the Stream Deck Software configuration window and click the gear icon in the top menu to access the Stream Deck `Preferences` window \[[example](/docs/images/stream-deck/preferences/streamdeck-preferences.png "Stream Deck Preferences Window")\].
 
-      4. Close the `Preferences` Windows and review the profiles you imported.
+  2. Click on the `Profiles` tab, click to expand the action menu, and click `Import...` \[[example](/docs/images/stream-deck/preferences/streamdeck-import-profile.png "Stream Deck Import Profile")\].
 
-      - [Black vs. White page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Black vs. White page 1 example")
-      - [Black vs. White page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-2.png "Black vs. White page 2 example")
-      - [White vs. Black page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-1.png "White vs. Black page 1 example")
-      - [White vs. Black page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-2.png "White vs. Black page 2 example")
+  3. Select and import the applicable Stream Deck Profiles that you downloaded to your SBO computer.
 
+  4. Close the `Preferences` Windows and review the profiles you imported.
 
-    </details>
+    - [Black vs. White page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Black vs. White page 1 example")
+    - [Black vs. White page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-2.png "Black vs. White page 2 example")
+    - [White vs. Black page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-1.png "White vs. Black page 1 example")
+    - [White vs. Black page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-2.png "White vs. Black page 2 example")
+
+</details>
 
 3. Import CRG Operator Profile
 
