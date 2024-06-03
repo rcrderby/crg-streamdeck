@@ -67,10 +67,10 @@ The content in this repository should help you get a Stream Deck connected to an
 
       4. Close the `Preferences` Windows and review the profiles you imported.
 
-        - [Black vs. White page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Black vs. White page 1 example")
-        - [Black vs. White page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-2.png "Black vs. White page 2 example")
-        - [White vs. Black page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-1.png "White vs. Black page 1 example")
-        - [White vs. Black page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-2.png "White vs. Black page 2 example")
+      - [Black vs. White page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Black vs. White page 1 example")
+      - [Black vs. White page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-2.png "Black vs. White page 2 example")
+      - [White vs. Black page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-1.png "White vs. Black page 1 example")
+      - [White vs. Black page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-2.png "White vs. Black page 2 example")
 
 
     </details>
