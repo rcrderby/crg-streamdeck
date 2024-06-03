@@ -41,7 +41,7 @@ The content in this repository will help you get a Stream Deck connected to and 
 
 <details>
   <summary>
-    Download and install the Stream Deck software on your SBO computer:
+    <strong>Download and install the Stream Deck software on your SBO computer</strong>
   </summary>
 
   The Stream Deck software allows your computer to recognize and interact with a [Stream Deck controller](#stream-deck-support "Stream Deck Controller Platforms").  You must install the Stream Deck software before for your Stream Deck controller to function.
@@ -56,7 +56,7 @@ The content in this repository will help you get a Stream Deck connected to and 
 
 <details>
   <summary>
-    Download and Import the Stream Deck Profiles:
+    <strong>Download and Import the Stream Deck Profiles</strong>
   </summary>
 
   Once you have the Stream Deck software installed on your SBO computer, you can download and install the Stream Deck Profiles for CRG in this repository.  These Stream Deck Profiles contain the key icons and key mapping configurations necessary to work with the CRG Operator Profile, and its keyboard mappings, that you will import in the next step.
@@ -84,7 +84,7 @@ The content in this repository will help you get a Stream Deck connected to and 
 
 <details>
   <summary>
-    Download and Import the CRG Operator Profile:
+    <strong>Download and Import the CRG Operator Profile</strong>
   </summary>
 
   The CRG Operator profile in this repository contains the configuration that maps CRG Operator Panel functions to keyboard keys for interaction with a Stream Deck.
@@ -103,7 +103,7 @@ The content in this repository will help you get a Stream Deck connected to and 
 
 <details>
   <summary>
-    Test Controlling CRG With Stream Deck:
+    <strong>Test Controlling CRG With Stream Deck</strong>
   </summary>
 
   Your Stream Deck and CRG are now set up to work together.  Start a new game and confirm the Stream Deck keys control the scoreboard correctly.
