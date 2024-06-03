@@ -14,7 +14,7 @@ Stream Desk is just one more way to operate a roller derby scoreboard that we've
 
 One thing to note about Stream Deck is it requires a [software installation](https://www.elgato.com/us/en/s/downloads "Stream Deck Software Downloads") in order to function, unlike most keyboards.  So, be sure you can install Stream Deck software on whichever SBO computer you intend to use.
 
-## Stream Deck Introduction and Support
+## Stream Deck Support
 
 Stream Deck controllers are devices with a number of customizable LED keys/buttons that connect to a Windows or macOS computer via USB.  Among other things, you may assign Stream Deck keys to send specific keystrokes to a computer and you can align those keystrokes with CRG Operator key mappings to control CRG with a Stream Deck.
 
