@@ -9,6 +9,7 @@
         "nodocs",
         "pylint",
         "rollerderby",
+        "Rulesets",
         "statsbook",
         "streamdeck",
         "WORKDIR"
