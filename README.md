@@ -10,7 +10,7 @@ This repository includes resources that allow you to control the [CRG ScoreBoard
 
 Every roller derby SBO [^1] has a preferred way to interact with the CRG Scoreboard application.  Some SBOs use a mouse exclusively, some use a mouse with a standard keyboard and small handful of key mappings, some use highly-customized keyboard controllers, and some even use gaming console controllers.
 
-Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png)) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/32-button/stream-deck-32-black-vs-white-page-1.png)).
+Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/32-button/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")).
 
 ## Stream Deck Introduction and Support
 
