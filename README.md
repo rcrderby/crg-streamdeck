@@ -37,13 +37,15 @@ Any Stream Deck platform should be able to control CRG, and this repository cont
 
 ## Getting Started
 
+The content in this repository should help you get a Stream Deck connected to and controlling CRG within a few minutes, assuming you already have a computer that effectively runs the CRG Scoreboard software.  Follow these steps to control CRG:
 
+1. Download and install the [Stream Deck software](https://www.elgato.com/us/en/s/downloads "Stream Deck Software Downloads") on your SBO computer.
 
-1. Import CRG Operator Profile
+2. Import CRG Operator Profile
 
-2. Import Stream Deck Profile
+3. Import Stream Deck Profile
 
-3. Control CRG With Stream Deck
+4. Control CRG With Stream Deck
 
 ## Resources
 
