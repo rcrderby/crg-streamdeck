@@ -10,7 +10,7 @@ This repository includes resources that allow you to control the [CRG ScoreBoard
 
 Every roller derby SBO [^1] has a preferred way to interact with the CRG Scoreboard application.  Some SBOs use a mouse exclusively, some use a mouse with a standard keyboard and small handful of key mappings, some use highly-customized keyboard controllers, and some even use gaming console controllers.
 
-Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")).
+Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel \[[example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")\] by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit \[[example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")\].
 
 ## Stream Deck Software
 
@@ -45,20 +45,33 @@ The content in this repository should help you get a Stream Deck connected to an
 
     <details>
       <summary>
-        1. Download the Stream Deck Profile(s):
+        Download the Stream Deck Profile(s)
       </summary>
 
       - Stream Deck Profiles contain all of the key icons and keyboard mappings to work with CRG, and you will find all available Stream Deck Profiles [here](/streamdeck-profiles "Stream Deck Profiles Folder").
-      - Note that there are different Profiles for macOS and Windows because the Stream Deck key mappings do not work across platforms.
+      - Download the appropriate Stream Deck Profiles to your SBO computer.
+      - Note there are different Profiles for macOS and Windows because the Stream Deck key mappings do not work across platforms.
 
     </details>
 
     <details>
       <summary>
-        2. Import the Stream Deck Profile(s):
+        Import the Stream Deck Profile(s)
       </summary>
 
-      - TODO
+      1. Open the Stream Deck Software configuration window and click the gear icon in the top menu to access the Stream Deck `Preferences` window \[[example](/docs/images/stream-deck/preferences/streamdeck-preferences.png "Stream Deck Preferences Window")\].
+
+      2. Click on the `Profiles` tab, click to expand the action menu, and click `Import...` \[[example](/docs/images/stream-deck/preferences/streamdeck-import-profile.png "Stream Deck Import Profile")\].
+
+      3. Select and import the applicable Stream Deck Profiles that you downloaded to your SBO computer.
+
+      4. Close the `Preferences` Windows and review the profiles you imported.
+
+        - [Black vs. White page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Black vs. White page 1 example")
+        - [Black vs. White page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-2.png "Black vs. White page 2 example")
+        - [White vs. Black page 1 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-1.png "White vs. Black page 1 example")
+        - [White vs. Black page 2 example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-white-vs-black-page-2.png "White vs. Black page 2 example")
+
 
     </details>
 
@@ -66,7 +79,7 @@ The content in this repository should help you get a Stream Deck connected to an
 
     <details>
       <summary>
-        1. TODO
+        TODO
       </summary>
 
       - TODO
@@ -77,7 +90,7 @@ The content in this repository should help you get a Stream Deck connected to an
 
     <details>
       <summary>
-        1. TODO
+        TODO
       </summary>
 
       - TODO
