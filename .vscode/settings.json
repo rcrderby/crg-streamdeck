@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "cqaekfe",
+        "Elgato",
         "getifaddr",
         "Hadolint",
         "inet",
@@ -8,7 +9,9 @@
         "nodocs",
         "pylint",
         "rollerderby",
+        "Rulesets",
         "statsbook",
+        "streamdeck",
         "WORKDIR"
     ]
 }
