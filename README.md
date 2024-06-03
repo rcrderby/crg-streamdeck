@@ -10,7 +10,7 @@ This repository includes resources that allow you to control the [CRG ScoreBoard
 
 Every roller derby SBO [^1] has a preferred way to interact with the CRG Scoreboard application.  Some SBOs use a mouse exclusively, some use a mouse with a standard keyboard and small handful of key mappings, some use highly-customized keyboard controllers, and some even use gaming console controllers.
 
-Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/32-button/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")).
+Stream Desk is just one more way to operate a roller derby scoreboard that we've found helps new SBOs overcome intimidation with the standard CRG Scoreboard Operator Panel ([example](/docs/images/crg/crg-operator-panel.png "CRG Scoreboard Operator Panel Example Image")) by presenting a simpler, colorized version of the most common SBO functions in a self-contained unit ([example](/docs/images/stream-deck/32-button-profiles/stream-deck-32-black-vs-white-page-1.png "Stream Deck Example Image")).
 
 ## Stream Deck Software
 
@@ -44,16 +44,45 @@ The content in this repository should help you get a Stream Deck connected to an
 2. Import the Stream Deck Profile.
 
     <details>
-    1. Test
+      <summary>
+        1. Download the Stream Deck Profile(s):
+      </summary>
 
-    2. Test
+      - Stream Deck Profiles contain all of the key icons and keyboard mappings to work with CRG, and you will find all available Stream Deck Profiles [here](/streamdeck-profiles "Stream Deck Profiles Folder").
+      - Note that there are different Profiles for macOS and Windows because the Stream Deck key mappings do not work across platforms.
 
-    3. Test
+    </details>
+
+    <details>
+      <summary>
+        2. Import the Stream Deck Profile(s):
+      </summary>
+
+      - TODO
+
     </details>
 
 3. Import CRG Operator Profile
 
+    <details>
+      <summary>
+        1. TODO
+      </summary>
+
+      - TODO
+
+    </details>
+
 4. Control CRG With Stream Deck
+
+    <details>
+      <summary>
+        1. TODO
+      </summary>
+
+      - TODO
+
+    </details>
 
 ## Resources
 
