@@ -37,6 +37,14 @@ Any Stream Deck platform should be able to control CRG, and this repository cont
 
 - Stream Deck Key Icons
 
+## Contributing
+
+Please consider sharing any Stream Deck content for CRG you create to this repository!  Some examples of things you can share include:
+
+- Stream Deck key icons in various team colors.
+- Stream Deck key layouts, within a Profile, for different models of controllers.
+- CRG operator profiles intended to work with Stream Deck key layouts for different models of controllers.
+
 [^1]: [Stream Deck XL](https://www.elgato.com/us/en/p/stream-deck-xl "Stream Deck XL")
 [^2]: [Stream Deck MK.2](https://www.elgato.com/us/en/p/stream-deck-mk2-black "Stream Deck MK.2")
 [^3]: [Stream Deck +](https://www.elgato.com/us/en/p/stream-deck-plus-black "Stream Deck +")
