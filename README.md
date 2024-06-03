@@ -91,20 +91,22 @@ The content in this repository will help you get a Stream Deck connected to and 
 
   1. Use the web browser on your SBO computer to navigate to the [`crg-operator-profiles` directory](/crg-operator-profiles "CRG Operator Profiles directory").
 
-  2. Download the profile file named [`crg-operator-streamdeck.json`](/crg-operator-profiles/crg-operator-streamdeck.json) to the SBO computer.
+  2. Download the profile file named [`crg-operator-streamdeck.json`](/crg-operator-profiles/crg-operator-streamdeck.json "Stream Deck CRG Operator Profile JSON") to the SBO computer.
 
-  3. Log on to your SBO CRG instance and click on the `Games / Teams / Rulesets` link \[[example](/docs/images/crg/crg-operator-console-main-page.png)\].
+  3. Log on to your SBO CRG instance and click on the `Games / Teams / Rulesets` link \[[example](/docs/images/crg/crg-operator-console-main-page.png "Scoreboard Operator Console Main Page")\].
 
-  4. Click on the `Choose File` button, select the `crg-operator-streamdeck.json` file, and click the `Import JSON` button \[[example](/docs/images/crg/crg-operator-console-main-page.png)\].
+  4. Click on the `Choose File` button, select the `crg-operator-streamdeck.json` file, and click the `Import JSON` button \[[example](/docs/images/crg/crg-operator-console-import-json.png "Import Stream Deck CRG Operator Profile JSON")\].
+
+  5. Confirm the `Operators` section of the page lists a profile named `streamdeck` \[[example](/docs/images/crg/crg-operator-console-imported-operator-profile.png "Imported Stream Deck CRG Operator Profile")\]
 
 </details>
 
-4. Control CRG With Stream Deck
-
 <details>
   <summary>
-    TODO
+    Test Controlling CRG With Stream Deck:
   </summary>
+
+  Your Stream Deck and CRG are now set up to work together.  Start a new game and confirm the Stream Deck keys control the scoreboard correctly.
 
 </details>
 
