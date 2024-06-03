@@ -31,7 +31,7 @@ Any Stream Deck platform should be able to control CRG, and this repository cont
 
 <sub>Generated with [Tables Generator](https://www.tablesgenerator.com/markdown_tables "Tables Generator")</sub>
 
-## Instructions
+## Getting Started
 
 1. Import CRG Operator Profile
 
