@@ -1,0 +1,43 @@
+# Merge Dependabot patch and minor updates once their checks pass
+# https://docs.github.com/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions
+
+---
+# Name of the action
+name: Dependabot Auto-merge
+
+# Events that trigger the action
+# 'pull_request_target' runs with a token that can enable auto-merge,
+# which the 'pull_request' token on a Dependabot branch cannot do
+on: pull_request_target
+
+# Enabling auto-merge is the only write this workflow needs
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    name: Auto-merge
+    # Nothing from the pull request is checked out or run, so the only
+    # thing this workflow trusts is the identity of its author
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      # fetch-metadata action documentation
+      # https://github.com/marketplace/actions/fetch-metadata-from-dependabot-prs
+      - name: Fetch The Update Metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98  # v3.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # A major update can be a breaking change that needs a person:
+      # Super Linter v6 to v8 moved ESLint to flat configuration and
+      # failed until the configuration moved with it
+      - name: Enable Auto-merge For Patch And Minor Updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --auto --squash "${PR_URL}"
