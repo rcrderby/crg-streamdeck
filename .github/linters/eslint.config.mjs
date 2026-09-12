@@ -3,17 +3,26 @@
 // https://ota-meshi.github.io/eslint-plugin-jsonc/
 
 import { defineConfig, globalIgnores } from 'eslint/config';
-import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
-import jsoncParser from 'jsonc-eslint-parser';
-
-const compat = new FlatCompat({
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all
-});
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
 
 export default defineConfig([
   globalIgnores(['!**/.*', '**/node_modules/.*']),
+
+  // The plugin's own flat configurations set the parser for each
+  // syntax, matching what Super Linter's default configuration does
+  ...eslintPluginJsonc.configs['recommended-with-json'].map((config) => ({
+    ...config,
+    files: ['**/*.json']
+  })),
+  ...eslintPluginJsonc.configs['recommended-with-jsonc'].map((config) => ({
+    ...config,
+    files: ['**/*.jsonc']
+  })),
+  ...eslintPluginJsonc.configs['recommended-with-json5'].map((config) => ({
+    ...config,
+    files: ['**/*.json5']
+  })),
+
   {
     // '.devcontainer/devcontainer.json' is JSON with Comments, which
     // the Dev Containers specification allows and the file relies on.
@@ -21,13 +30,7 @@ export default defineConfig([
     // bans them is off so they pass.
     files: ['**/*.json'],
 
-    extends: compat.extends('plugin:jsonc/recommended-with-json'),
-
     languageOptions: {
-      parser: jsoncParser,
-      ecmaVersion: 'latest',
-      sourceType: 'script',
-
       parserOptions: {
         jsonSyntax: 'JSONC'
       }
@@ -35,36 +38,6 @@ export default defineConfig([
 
     rules: {
       'jsonc/no-comments': 'off'
-    }
-  },
-  {
-    files: ['**/*.jsonc'],
-
-    extends: compat.extends('plugin:jsonc/recommended-with-jsonc'),
-
-    languageOptions: {
-      parser: jsoncParser,
-      ecmaVersion: 'latest',
-      sourceType: 'script',
-
-      parserOptions: {
-        jsonSyntax: 'JSONC'
-      }
-    }
-  },
-  {
-    files: ['**/*.json5'],
-
-    extends: compat.extends('plugin:jsonc/recommended-with-json5'),
-
-    languageOptions: {
-      parser: jsoncParser,
-      ecmaVersion: 'latest',
-      sourceType: 'script',
-
-      parserOptions: {
-        jsonSyntax: 'JSON5'
-      }
     }
   }
 ]);
