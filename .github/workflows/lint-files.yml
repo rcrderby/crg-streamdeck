@@ -26,7 +26,7 @@ jobs:
       # checkout action documentation
       # https://github.com/marketplace/actions/checkout
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # Fetch all history for all branches and tags
           fetch-depth: 0
@@ -34,7 +34,7 @@ jobs:
       # Super Linter action documentation
       # https://github.com/marketplace/actions/super-linter
       - name: Super Linter
-        uses: super-linter/super-linter@v8.3.1
+        uses: super-linter/super-linter@v8.7.0
         # Configuration settings
         env:
           # Report status checks
