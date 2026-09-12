@@ -1,6 +1,6 @@
 ---
 # Perform linting with GitHub Super Linter
-## https://github.com/super-linter/super-linter
+# https://github.com/super-linter/super-linter
 
 # Name of the action
 name: Super Linter
@@ -11,42 +11,52 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Reporting status checks is the only write this workflow needs
+permissions:
+  contents: read
+  packages: read
+  statuses: write
+
+# Cancel superseded runs on a branch; never cancel main runs so the
+# post-merge run always completes.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
   lint_repository:
     name: Lint repository files
+    # Same-repo pushes are already covered by the 'push' event, so only
+    # run the pull_request event for forks (their branches are not in
+    # this repo and so never trigger 'push')
+    if: >-
+      github.event_name != 'pull_request' ||
+      github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
-
-    # Job permissions
-    permissions:
-      contents: read
-      packages: read
-      statuses: write
 
     steps:
       # checkout action documentation
       # https://github.com/marketplace/actions/checkout
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
-          # Fetch all history for all branches and tags
+          # Full git history is needed to get a proper list of changed files
           fetch-depth: 0
 
       # Super Linter action documentation
       # https://github.com/marketplace/actions/super-linter
       - name: Super Linter
-        uses: super-linter/super-linter@v8.3.1
+        uses: super-linter/super-linter/slim@47984f49b4e87383eed97890fe2dca6063bbd9c3  # v8.3.1
         # Configuration settings
         env:
           # Report status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: true
           # Specify languages to lint
-          VALIDATE_DOCKERFILE_HADOLINT: true
           VALIDATE_GITHUB_ACTIONS: true
           VALIDATE_GITLEAKS: true
           VALIDATE_JSON: true
           VALIDATE_MARKDOWN: true
-          VALIDATE_PYTHON_FLAKE8: true
-          VALIDATE_PYTHON_PYLINT: true
           VALIDATE_YAML: true
           # Language-specific configuration
           YAML_ERROR_ON_WARNING: true

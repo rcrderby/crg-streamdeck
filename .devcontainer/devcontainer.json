@@ -1,38 +1,34 @@
 // Visual Studio Code Development Container configuration file
 // https://code.visualstudio.com/docs/remote/devcontainerjson-reference
 {
-    // Docker build instructions
-    "build": {
-        "dockerfile": "../Dockerfile.dev",
-        "context": ".."
-    },
+    // This repository holds documentation, images, JSON, and Stream Deck
+    // profile archives, so a stock base image is all the container needs
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
     "name": "crg-streamdeck",
     "customizations": {
         "vscode": {
             // Visual Studio Code extensions
             "extensions": [
                 "davidanson.vscode-markdownlint",
+                "dbaeumer.vscode-eslint",
                 "github.vscode-github-actions",
                 "github.vscode-pull-request-github",
-                "ms-python.flake8",
-                "ms-python.pylint",
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-azuretools.vscode-docker",
                 "redhat.vscode-yaml",
                 "streetsidesoftware.code-spell-checker"
             ],
             // Visual Studio Code environment configuration
             "settings": {
+                // ESLint configuration, which lints the JSON files
+                "eslint.options": {
+                    "overrideConfigFile": "/workspaces/crg-streamdeck/.github/linters/eslint.config.mjs"
+                },
+                // Markdownlint configuration
                 "markdownlint.config": {
                     "extends": "/workspaces/crg-streamdeck/.github/linters/.markdown-lint.yml"
                 },
-                // Set Python configuration for runtime, syntax analysis, and linting
-                "python.analysis.useImportHeuristic": true,
-                "python.formatting.provider": "autopep8",
-                "python.pythonPath": "/usr/local/bin/python3",
-                // Set the default terminal application to bash
-                "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
+                // YAML validation
+                "yaml.customTags": [],
+                "yaml.validate": true,
                 // Customize YAML formatting
                 "[yaml]": {
                     "editor.autoIndent": "keep",
@@ -48,7 +44,5 @@
         }
     },
     // Ports to forward to the devcontainer
-    "forwardPorts": [
-    //     8080
-    ]
+    "forwardPorts": []
 }
